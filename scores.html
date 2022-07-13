@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".assets/css/styles.css">
-    <link rel="stylesheet" href=".assets/css/scores.css">
-    <title>High Scores</title>
+    <link rel="stylesheet" href=".\assets\css\styles.css">
+    <link rel="stylesheet" href=".\assets\css\scores.css">
+    <title>Scores</title>
 </head>
-<body>
+<body onload="displayScores()">
+    <div class="enter-score hide">Enter your initials!
+        <form id="submit-form" style="display: inline">
+            <input type="text" id="input-initials">
+            <button id="submit-button" type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="scores-table">
+        <button id="return-to-index">Back to Quiz</button>
+        <button id="clear-button">Clear Scores</button>
+        <table id="score-table-data">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Initials</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody id="score-body"></tbody>
+        </table>
+    </div>
     <script src="./assets/js/scores.js"></script>
 </body>
 </html>

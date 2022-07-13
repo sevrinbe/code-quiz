@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".assets/css/styles.css">
+    <link rel="stylesheet" href=".\assets\css\styles.css">
     <title>Code Quiz</title>
 </head>
 <body>
-    <a href="./scores.html" target="_blank">View High Scores</a>
-    <script src="./assets/js/questions.js"></script>
+    <a href="./scores.html" target="_blank" class="left">View Scores</a>
+    <p id="timer" class="right">Timer: 90</p>
+    <div class="quiz-body">
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question"></div>
+            <div id="answer-buttons" class="button-list">
+                <button class="button answer"></button>
+                <button class="button answer"></button>
+                <button class="button answer"></button>
+                <button class="button answer"></button>
+            </div>
+            <hr>
+            <div class="result"></div>
+        </div>
+        <div id="introduction-content">
+            <div class="controls button intro-text">
+                <h1>Coding Quiz Challenge!</h1>
+                <p>Try and answer these Javascript related questions! Keep in mind that wrong answers will reduce the time by 25 seconds.</p>
+                <button id="start-button" class="button">Start Quiz</button>
+            </div>
+        </div>
+    </div>
+
     <script src="./assets/js/logic.js"></script>
 </body>
 </html>
