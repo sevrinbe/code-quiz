@@ -19,6 +19,9 @@ Screenshots provided:
 
 On this webpage: https://github.com/sevrinbe/code-quiz, click on the green code button. This will give multiple options to download the project. You can download the zip file and all the project contents will be there. You can also copy the SSH or HTTPS link to your clipboard and use terminal to clone the project to your computer.
 
+
+https://sevrinbe.github.io/code-quiz/
+
 ## License
 
 MIT License
